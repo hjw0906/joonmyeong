@@ -1,31 +1,31 @@
-print("복약 시간 확인 프로그램")
+print("복약 시간 확인 프로그램") # 프로그램 이름
 
-while True:
-  name = input("환자 이름을 입력하세요:")
+while True: # 반복 시작
+  name = input("환자 이름을 입력하세요:") # 환자 이름, 약 이름, 복용 시간 입력
   medicine = input("약 이름을 입력하세요:")
   time = input("약을 먹을 시간을 입력하세요")
 
-  print("환자 이름:", name)
+  print("환자 이름:", name) # 입력한 정보 출력
   print("약 이름", medicine)
   print("복용 시간:", time)
 
-  print("복약 시간이 되었습니다.")
-  answer = input("약을 먹었나요? (예/아니오)")
+  print("복약 시간이 되었습니다.") # 약 복용 시간 안내
+  answer = input("약을 먹었나요? (예/아니오)") # 약 복용 여부 질문
 
-  if answer == "예":
-    print("약 복용이 확인되었습니다.")
+  if answer == "예": # 먹었다면?
+    print("약 복용이 확인되었습니다.") # 확인 안내
 
-  else:
-    print("아직 약을 먹지 않았습니다.")
+  else: # 아니라면?
+    print("아직 약을 먹지 않았습니다.") # 먹으라고 안내
     print("복용 여부를 다시 확인하세요.")
 
-  print("복약 확인이 끝났습니다.")
+  print("복약 확인이 끝났습니다.") # 복용 확인 종료 안내 후
 
-  finish = input("프로그램을 끝낼까요? (예/아니오)")
-  if finish == "예":
-    break
+  finish = input("프로그램을 끝낼까요? (예/아니오)") # 프로그램 종료 여부 질문
+  if finish == "예": # 종료라면?
+    break # 반복 끝
 
-  else:
-    print("다음 환자를 확인합니다.")
-print("프로그램을 종료합니다.")
+  else: # 아니라면?
+    print("다음 환자를 확인합니다.") # 다음 환자 확인 시작
+print("프로그램을 종료합니다.") # 아까 선택에서 반복 종료 후 프로그램 종료 안내
 print("이용해주셔서 감사합니다.")
